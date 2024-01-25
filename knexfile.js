@@ -1,4 +1,7 @@
 // Update with your config settings.
+const path = require("path");
+require("dotenv").config();
+const { DATABASE_URL } = process.env;
 
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
