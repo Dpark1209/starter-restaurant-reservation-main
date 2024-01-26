@@ -14,7 +14,7 @@
     "start": "npx concurrently 'npm run start:backend' 'npm run start:frontend'",
     "start:backend": "npm --prefix ./back-end start",
     "start:frontend": "npm --prefix ./front-end start",
-    "start:dev": "npx concurrently 'npm run start:dev --prefix ./back-end' 'npm start --prefix ./front-end'",
+    "start:dev": "npx concurrently \"npm run start:dev --prefix ./back-end\" \"npm start --prefix ./front-end\" ",
     "test": "npm run test:frontend && npm run test:backend",
     "test:backend": "npm test --prefix ./back-end",
     "test:frontend": "npm test --prefix ./front-end",
@@ -48,10 +48,12 @@
   "keywords": [],
   "author": "Thinkful, Inc.",
   "license": "UNLICENSED",
-  "engines": {
-    "node": "14.15.1"
-  },
   "dependencies": {
-    "moment": "^2.29.1",
+    "bootstrap": "^5.1.3",
+    "knex": "^2.1.0",
+    "react-bootstrap": "^2.4.0"
+  },
+  "devDependencies": {
+    "@iconify/react": "^3.2.2"
   }
 }
