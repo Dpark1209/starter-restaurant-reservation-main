@@ -1,11 +1,11 @@
 {
-  "name": "restaurant-reservation-app",
+  "name": "starter-restaurant-reservation",
   "version": "1.0.0",
-  "description": "Restaurant reservation system",
+  "description": "Starter project restaurant reservation system",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/Dpark1209/starter-restaurant-reservation-main.git"
+    "url": "https://github.com/Thinkful-Ed/starter-restaurant-reservation"
   },
   "scripts": {
     "build": "npm -prefix front-end run build",
@@ -14,7 +14,7 @@
     "start": "npx concurrently 'npm run start:backend' 'npm run start:frontend'",
     "start:backend": "npm --prefix ./back-end start",
     "start:frontend": "npm --prefix ./front-end start",
-    "start:dev": "npx concurrently \"npm run start:dev --prefix ./back-end\" \"npm start --prefix ./front-end\" ",
+    "start:dev": "npx concurrently 'npm run start:dev --prefix ./back-end' 'npm start --prefix ./front-end'",
     "test": "npm run test:frontend && npm run test:backend",
     "test:backend": "npm test --prefix ./back-end",
     "test:frontend": "npm test --prefix ./front-end",
@@ -46,9 +46,12 @@
     "test:frontend:watch": "npm test --prefix ./front-end"
   },
   "keywords": [],
-  "author": "David Park",
+  "author": "Thinkful, Inc.",
   "license": "UNLICENSED",
+  "engines": {
+    "node": "14.15.1"
+  },
   "dependencies": {
-    "cors": "^2.8.5"
+    "moment": "^2.29.1",
   }
 }
