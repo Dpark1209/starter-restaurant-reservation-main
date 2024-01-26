@@ -5,7 +5,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/halebeau/restuarant-reservation-app.git"
+    "url": "https://github.com/Dpark1209/starter-restaurant-reservation-main.git"
   },
   "scripts": {
     "build": "npm -prefix front-end run build",
@@ -46,7 +46,7 @@
     "test:frontend:watch": "npm test --prefix ./front-end"
   },
   "keywords": [],
-  "author": "Beau Hale",
+  "author": "David Park",
   "license": "UNLICENSED",
   "dependencies": {
     "cors": "^2.8.5"
