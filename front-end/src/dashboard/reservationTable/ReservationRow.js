@@ -7,7 +7,7 @@ export default function ReservationRow({ reservation, cancelRes }) {
     return window.confirm(
       "Do you want to cancel this reservation? This cannot be undone."
     )
-      ? cancelRes(reservation)
+      ? cancelReservation(reservation)
       : null;
   }
 
