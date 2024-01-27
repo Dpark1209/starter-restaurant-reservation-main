@@ -39,6 +39,7 @@ export default function ReservationRow({ reservation, cancelRes }) {
           <></>
           }
         </td>
+        <td>
         <button
                       type="button"
                       className="btn btn-danger mx-2 text-white"
@@ -48,6 +49,7 @@ export default function ReservationRow({ reservation, cancelRes }) {
                     >
                       Cancel
           </button>
+        </td>
     </tr>
   );
 }
