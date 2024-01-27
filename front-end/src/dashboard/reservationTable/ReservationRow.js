@@ -41,8 +41,14 @@ export default function ReservationRow({ reservation, cancelRes }) {
           }
         </td>
         <td>
-        <button type="button" onClick={() => history.goBack()}>Cancel</button>
-        </td>
+        <button
+          className="btn btn-danger"
+          data-reservation-id-cancel={reservation.reservation_id}
+          onClick={handleCancel}
+        >
+          Cancel
+        </button>
+      </td>
     </tr>
   );
 }
