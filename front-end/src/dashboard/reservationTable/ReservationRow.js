@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory, Link } from "react-router-dom"
+import { useHistory, Link } from "react-router-dom";
 
 export default function ReservationRow({ reservation, cancelRes }) {
   function handleCancel() {
@@ -39,13 +39,15 @@ export default function ReservationRow({ reservation, cancelRes }) {
           <></>
           }
         </td>
-      <td data-reservation-id-cancel={reservation.reservation_id}>
-        {reservation.status === "booked" ? 
-          <button onClick={ ()=> handleCancel(reservation.reservation_id)}> Cancel</button>
-          :
-          <></>
-        }
-      </td>
+        <button
+                      type="button"
+                      className="btn btn-danger mx-2 text-white"
+                      data-reservation-id-cancel={reservation.reservation_id}
+                      value={reservation.reservation_id}
+                      onClick={handleCancel}
+                    >
+                      Cancel
+          </button>
     </tr>
   );
 }
